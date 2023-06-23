@@ -1,0 +1,37 @@
+---
+name: CI
+
+on:
+  pull_request:
+    types:
+      - opened
+      - ready_for_review
+      - reopened
+      - synchronize
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    if: ${{ !github.event.pull_request.draft }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Installing dependencies
+        run: echo "Not implemented."
+      - name: Format
+        run: echo "Not implemented."
+      - name: Lint
+        run: echo "Not implemented."
+      - name: Build
+        run: echo "Not implemented."
+      - name: Test
+        run: echo "Not implemented."
