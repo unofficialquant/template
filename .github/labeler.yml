@@ -1,0 +1,24 @@
+---
+repo:
+  - "*"
+
+assets:
+  - assets/**/*
+
+docs:
+  - docs/**/*
+
+github:
+  - .github/*
+
+github-actions:
+  - .github/workflows/*
+
+scripts:
+  - scripts/**/*
+
+src:
+  - src/**/*
+
+tools:
+  - tools/**/*
