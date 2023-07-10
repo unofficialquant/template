@@ -27,8 +27,8 @@ jobs:
           exempt-all-pr-milestones: true
           stale-issue-message: >
             This issue is stale because it has been open 30 days with no
-            activity. Remove stale label or comment or this will be closed in a
-            week.
+            activity. Remove stale label or comment or this will be closed in 5
+            days.
           stale-pr-message: >
             This PR is stale because it has been open 30 days with no activity.
             Remove stale label or comment or this will be closed in 5 days.
